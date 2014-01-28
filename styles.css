@@ -426,6 +426,7 @@ h2 {
     font-size: 0.75em;
 }
 a {
+	outline: none;
     position: relative;
     text-decoration: none;
     color: #db421c;
@@ -457,7 +458,7 @@ a::after{
          -o-transform: rotate(90deg);
             transform: rotate(90deg);    
 
-    webkit-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
         -o-transition: all 0.35s ease-in-out;
            transition: all 0.35s ease-in-out;
@@ -525,11 +526,11 @@ footer nav {
 }
 .waterfall{
     position: absolute;
-    right: 0;
+    right: 1px;
 }
 .waterfall-end{
     position: absolute;
-    right: -19%;
+    right: -18%;
     bottom: 29%;
 }
 .logo {
@@ -542,9 +543,12 @@ footer nav {
 }
 
 @media all and (max-width: 580px){
+    body {
+        font-size: 12px;
+    }
     footer {
         position: static;
-        margin: 3em 0 0 0;
+        margin: 1em 0 0 0;
     }
     footer nav {
         width: 100%;
