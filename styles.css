@@ -421,12 +421,13 @@ h1, h2 {
 }
 h1 {
     font-size: 1em;
+    padding-top:1em;
 }
 h2 {
-    font-size: 0.75em;
+    font-size: 1em;
 }
 a {
-	outline: none;
+    outline: none;
     position: relative;
     text-decoration: none;
     color: #db421c;
@@ -530,16 +531,18 @@ footer nav {
 }
 .waterfall-end{
     position: absolute;
-    right: -18%;
+    right: -16%;
     bottom: 29%;
 }
 .logo {
-    width:100%; 
-    margin:0 auto;
-    padding-bottom: 5px;
+    margin: 0 auto;
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
+    background-color: hsl(12, 78%, 48%);
+    width:140px;
 }
 .logo img {
-    width: 135px; 
+    width: 90px; 
 }
 
 @media all and (max-width: 580px){
@@ -548,7 +551,7 @@ footer nav {
     }
     footer {
         position: static;
-        margin: 1em 0 0 0;
+        margin: 0.7em 0 0 0;
     }
     footer nav {
         width: 100%;
