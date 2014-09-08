@@ -431,11 +431,6 @@ a {
     position: relative;
     text-decoration: none;
     color: #db421c;
-    -webkit-box-shadow: inset 0px 4px 0px #fff;
-       -moz-box-shadow: inset 0px 4px 0px #fff;
-         -o-box-shadow: inset 0px 4px 0px #fff;
-            box-shadow: inset 0px 4px 0px #fff;
-
     -webkit-transition: all 0.5s ease-in-out;
        -moz-transition: all 0.5s ease-in-out;
          -o-transition: all 0.5s ease-in-out;
@@ -447,19 +442,7 @@ a + a {
     margin-left: 20px; 
 }
 a::after{
-    width: 20px;
-    height: 1px;
-    content: " ";
-    background: black;
-    position: absolute;
-    top: 10px;
-    right: -22px;
-    -webkit-transform: rotate(90deg);
-       -moz-transform: rotate(90deg);
-         -o-transform: rotate(90deg);
-            transform: rotate(90deg);    
-
-    -webkit-transition: all 0.35s ease-in-out;
+   -webkit-transition: all 0.35s ease-in-out;
       -moz-transition: all 0.35s ease-in-out;
         -o-transition: all 0.35s ease-in-out;
            transition: all 0.35s ease-in-out;
@@ -472,20 +455,6 @@ a:last-child::after {
 
 a:hover {
     color: black;
-}
-
-a:hover::after {
-    top: 20px;
-    right: 0px;
-    width: 100%;
-    height: 2px;
-    -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
-         -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-
-    
-
 }
 
 a:focus, a:active{
@@ -504,35 +473,6 @@ footer nav {
     display: inline-block;
     margin: 0 auto;
     height: 7em;
-}
-.drop {
-    margin-left: 20px;
-
-}
-.drop--mobile{
-    display: none;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 1em;
-}
-.drop--mobile a {
-    display: inline;
-    margin: 0;
-    font-size: 1em;
-}
-
-.inline { 
-    display: inline;
-}
-.waterfall{
-    position: absolute;
-    right: 1px;
-}
-.waterfall-end{
-    position: absolute;
-    right: -16%;
-    bottom: 29%;
 }
 .logo {
     margin: 0 auto;
@@ -579,11 +519,4 @@ footer nav {
                 box-shadow: inset 0px 4px 0px hsl(0, 100%, 34%);
 
     }
-    .drop {
-        display: none;
-    }
-    .drop--mobile{
-        display: block;
-    }
-
 }
