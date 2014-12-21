@@ -24,7 +24,7 @@ h1 {
 a {
     text-decoration: none;
     color: #0ccccc;
-    padding-left: 23px;
+    padding-left: 26px;
     -webkit-transition: all 0.5s ease-in-out;
        -moz-transition: all 0.5s ease-in-out;
          -o-transition: all 0.5s ease-in-out;
@@ -33,6 +33,11 @@ a {
 
 a:first-child {
     padding-left: 0;
+    float: left;
+}
+
+a:last-child {
+  float: right;
 }
 
 a:hover {
