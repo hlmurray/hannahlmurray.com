@@ -13,6 +13,7 @@ body {
     height: 80px;
     top: 50%;
     left: 50%;
+    text-align: center;
     -webkit-transform: translateX(-50%) translateY(-50%);
        -moz-transform: translateX(-50%) translateY(-50%);
          -o-transform: translateX(-50%) translateY(-50%);
@@ -22,7 +23,7 @@ body {
 h1 { 
     margin: 0;
     font-size: 2em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 }
 
 nav {
