@@ -73,6 +73,7 @@ a:hover {
 
 .social-nav {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .social-nav li {
