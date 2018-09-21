@@ -18,7 +18,7 @@ class SocialNav extends React.Component {
         ]
 
         const socialList = icons.map((icon) => {
-            return <li key={icon.name}><a href={icon.url}><FontAwesomeIcon icon={['fab', `${icon.name}`]} /></a></li>;
+            return <li key={icon.name}><a href={icon.url} target="_blank"><FontAwesomeIcon icon={['fab', `${icon.name}`]} /></a></li>;
     	})
 
         return  <ul className="social-nav">{ socialList }</ul>
@@ -32,7 +32,7 @@ class App extends Component {
                 <div>
                     <h1>I&rsquo;m Hannah</h1>
                     <img className="image" src={headshot} alt="hannahlmurray" />
-                    <p>I&rsquo;m a Senior Front End Engineer at <a href="https://mmlafleur.com">MM.LaFleur</a>. Previously at <a href="https://thecharlesnyc.com">The Charles</a> and Time Inc. Originally from South Carolina, studied Computer Science at the College of Charleston. Lover of running, cooking, Saturday Night Live, and Bravo.</p>
+                    <p>I&rsquo;m a Senior Front End Engineer based out of Brooklyn, NY. Currently working at <a href="https://mmlafleur.com" target="_blank">MM.LaFleur</a>, previously at <a href="https://thecharlesnyc.com" target="_blank">The Charles</a> and Time Inc. Originally from South Carolina, and studied Computer Science at the College of Charleston. Lover of running, cooking, Saturday Night Live, and Bravo.</p>
                     <SocialNav />
                 </div>
             </div>
