@@ -43,6 +43,7 @@ export const Headshot = styled.img`
 export const Nav = styled.ul`
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
 
     li {
         display: inline-block;
