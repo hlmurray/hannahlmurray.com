@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import headshot from './hlm.jpg';
-import './App.css';
+import { Container, Title, Content, Link, Headshot, Nav } from './styling'
+import headshot from './hlm.jpg'
 
 library.add(fab)
 
@@ -18,26 +18,24 @@ class SocialNav extends React.Component {
         ]
 
         const socialList = icons.map((icon) => {
-            return <li key={icon.name}><a href={icon.url} target="_blank"><FontAwesomeIcon icon={['fab', `${icon.name}`]} /></a></li>;
+            return <li key={icon.name}><Link href={icon.url} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', `${icon.name}`]} /></Link></li>
     	})
 
-        return  <ul className="social-nav">{ socialList }</ul>
+        return  <Nav>{ socialList }</Nav>
     }
 }
 
 class App extends Component {
     render() {
         return (
-            <div className="container center">
-                <div>
-                    <h1>I&rsquo;m Hannah</h1>
-                    <img className="image" src={headshot} alt="hannahlmurray" />
-                    <p>I&rsquo;m a Senior Front End Engineer based out of Brooklyn, NY. Currently working at <a href="https://mmlafleur.com" target="_blank">MM.LaFleur</a>, previously at <a href="https://thecharlesnyc.com" target="_blank">The Charles</a> and Time Inc. Originally from South Carolina, and studied Computer Science at the College of Charleston. Lover of running, cooking, Saturday Night Live, and Bravo.</p>
-                    <SocialNav />
-                </div>
-            </div>
-        );
+            <Container>
+                <Title>I&rsquo;m Hannah</Title>
+                <Headshot src={headshot} alt="hannahlmurray" />
+                <Content>I&rsquo;m a Senior Front End Engineer based out of Brooklyn, NY. Currently working at <Link href="https://mmlafleur.com" target="_blank" rel="noopener noreferrer">MM.LaFleur</Link>, previously at <Link href="https://thecharlesnyc.com" target="_blank" rel="noopener noreferrer">The Charles</Link> and Time Inc. Originally from South Carolina, and studied Computer Science at the College of Charleston. Lover of running, cooking, Saturday Night Live, and Bravo.</Content>
+                <SocialNav />
+            </Container>
+        )
     }
 }
 
-export default App;
+export default App
