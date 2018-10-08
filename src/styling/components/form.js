@@ -22,7 +22,7 @@ export const Form = styled.form`
     }
 
     input[type="submit"] {
-        background-color: ${colors.grayDark};
+        background-color: ${colors.rust};
         color: ${colors.white};
     }
 `

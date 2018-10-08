@@ -4,6 +4,10 @@ import colors from './colors'
 injectGlobal`
     @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+    * {
+        box-sizing: border-box;
+    }
+
     html {
         height: 100%;
     }

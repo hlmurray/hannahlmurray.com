@@ -21,7 +21,7 @@ export const Content = styled.p`
 export const Button = styled.button`
     padding: 10px 20px;
     border: 0;
-    background-color: ${colors.grayDark};
+    background-color: ${colors.rust};
     color: ${colors.white};
     outline: none;
     font-family: 'Playfair Display', serif;
@@ -53,7 +53,7 @@ export const Headshot = styled.img`
 export const Nav = styled.ul`
     list-style-type: none;
     padding-left: 0;
-    margin: 0;
+    margin: 0 0 20px 0;
 
     li {
         display: inline-block;
