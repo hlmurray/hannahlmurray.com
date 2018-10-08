@@ -18,6 +18,16 @@ export const Content = styled.p`
     line-height: 1.5em;
 `
 
+export const Button = styled.button`
+    padding: 10px 20px;
+    border: 0;
+    background-color: ${colors.grayDark};
+    color: ${colors.white};
+    outline: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+`;
+
 export const Link = styled.a`
     text-decoration: none;
     color: ${colors.gray};
