@@ -3,7 +3,8 @@ const colors = {
     grayDark: '#434343',
     grayLight: '#efefef',
     white: '#fff',
-    rust: '#c27448',
+    blue: '#48679e',
+    blueSat: '#48679eb3',
 }
 
 export default colors

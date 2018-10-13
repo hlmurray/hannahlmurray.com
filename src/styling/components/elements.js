@@ -21,11 +21,17 @@ export const Content = styled.p`
 export const Button = styled.button`
     padding: 10px 20px;
     border: 0;
-    background-color: ${colors.rust};
+    background-color: ${colors.blue};
     color: ${colors.white};
     outline: none;
     font-family: 'Playfair Display', serif;
     font-size: 16px;
+    cursor: pointer;
+
+    &:disabled {
+        cursor: default;
+        background-color: ${colors.blueSat};
+    }
 `;
 
 export const Link = styled.a`

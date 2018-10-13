@@ -20,9 +20,4 @@ export const Form = styled.form`
         border: 0;
         outline: none;
     }
-
-    input[type="submit"] {
-        background-color: ${colors.rust};
-        color: ${colors.white};
-    }
 `
