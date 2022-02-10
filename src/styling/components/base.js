@@ -1,7 +1,7 @@
 import { injectGlobal } from 'styled-components'
 import colors from './colors'
 
-injectGlobal`
+export const GlobalStyle = injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
   html {
