@@ -8,9 +8,8 @@ library.add(fab)
 
 const SocialNav = () => {
   const icons = [
-    {name: 'facebook-f', url: 'https://www.facebook.com/hlmurray91'},
-    {name: 'instagram', url: 'https://www.instagram.com/hannahlmurray/'},
-    {name: 'twitter', url: 'https://twitter.com/hlmurray'},
+    {name: 'instagram', url: 'https://www.instagram.com/hannahmconti/'},
+    {name: 'twitter', url: 'https://twitter.com/hannahmconti'},
     {name: 'linkedin-in', url: 'https://www.linkedin.com/in/hlmurray/'},
     {name: 'github', url: 'https://github.com/hlmurray'}
   ]
